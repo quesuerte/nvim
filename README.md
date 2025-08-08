@@ -4,11 +4,8 @@ This is an extremely baseline setup of `nvim` to provide necessary IDE tooling.
 I've tried only to include the most official libraries, and completely avoided using a package manager.
 
 # Setup
-Run the following git commands in order to manually needed libraries:
-```
-git clone https://github.com/nvim-telescope/telescope.nvim.git ./pack/nvim/start/telescope
-git clone https://github.com/neovim/nvim-lspconfig ./pack/nvim/start/nvim-lspconfig
-git clone -b master https://github.com/nvim-treesitter/nvim-treesitter.git ./pack/nvim/start/nvim-treesitter
-git clone https://github.com/folke/tokyonight.nvim.git ./pack/nvim/start/tokyonight
-git clone https://github.com/nvim-lua/plenary.nvim.git ./pack/nvim/start/plenary
-```
+If cloning the repo, plugins can be downloaded automatically using:
+`git clone --recurse-submodules -b minimal https://github.com/quesuerte/nvim.git`
+
+Otherwise, if the repo is already downloaded, use:
+`git submodule update --remote`
