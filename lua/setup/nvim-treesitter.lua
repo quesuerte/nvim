@@ -22,6 +22,3 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   }
 }
-
--- Default colorscheme doesn't support treesitter highlight groups, setting up manually:
--- TODO

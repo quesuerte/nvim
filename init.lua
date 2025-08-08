@@ -50,3 +50,4 @@ vim.opt.shellcmdflag = "-command"
 vim.opt.shellquote = "\""
 vim.opt.shellxquote = ""
 
+require("setup")
