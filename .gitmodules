@@ -1,0 +1,16 @@
+[submodule "pack/nvim/start/telescope"]
+	path = pack/nvim/start/telescope
+	url = https://github.com/nvim-telescope/telescope.nvim.git
+[submodule "pack/nvim/start/nvim-treesitter"]
+	path = pack/nvim/start/nvim-treesitter
+	url = https://github.com/nvim-treesitter/nvim-treesitter.git
+	branch = master
+[submodule "pack/nvim/start/nvim-lspconfig"]
+	path = pack/nvim/start/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig
+[submodule "pack/nvim/start/tokyonight"]
+	path = pack/nvim/start/tokyonight
+	url = https://github.com/folke/tokyonight.nvim.git
+[submodule "pack/nvim/start/plenary"]
+	path = pack/nvim/start/plenary
+	url = https://github.com/nvim-lua/plenary.nvim.git
