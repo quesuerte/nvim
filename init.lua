@@ -50,4 +50,7 @@ vim.opt.shellcmdflag = "-command"
 vim.opt.shellquote = "\""
 vim.opt.shellxquote = ""
 
+-- might have to manually append path
+-- vim.opt.rtp:append("~/.config/nvim")
+-- vim.opt.rtp:append("~/.config/nvim/pack/*/start/*")
 require("setup")
