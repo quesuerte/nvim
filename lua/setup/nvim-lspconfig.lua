@@ -13,3 +13,10 @@ vim.lsp.enable('yamlls')
 vim.lsp.enable('ts_ls')
 vim.lsp.enable('jdtls')
 
+vim.diagnostic.config({
+    virtual_text = {
+        current_line = true,
+        prefix = '>'
+    },
+})
+vim.keymap.set("n", "<leader>r", vim.lsp.buf.rename)
