@@ -8,4 +8,4 @@ If cloning the repo, plugins can be downloaded automatically using:
 `git clone --recurse-submodules -b minimal https://github.com/quesuerte/nvim.git`
 
 Otherwise, if the repo is already downloaded, use:
-`git submodule update --remote`
+`git submodule update --init --recursive --remote`
