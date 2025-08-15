@@ -12,6 +12,10 @@ vim.lsp.enable('yamlls')
 -- npm install -g typescript typescript-language-server
 vim.lsp.enable('ts_ls')
 vim.lsp.enable('jdtls')
+-- npm install -g bash-language-server
+vim.lsp.enable('bashls')
+-- npm install -g sql-language-server
+vim.lsp.enable('sqlls')
 
 vim.diagnostic.config({
     virtual_text = {
