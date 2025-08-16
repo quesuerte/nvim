@@ -1,4 +1,12 @@
 -- git clone https://github.com/nvim-telescope/telescope.nvim.git ./pack/nvim/start/telescope
+-- winget install BurntSushi.ripgrep.MSVC
+
+local f=io.open("~/.config/nvim/pack/nvim/start/telescope-fzf-native/build/libfzf.dll","r")
+if f~=nil then io.close() else
+vim.notify("Telescope fzf native .dll not present--building", vim.log.levels.INFO)
+os.execute('powershell -Command "cd ~/.config/nvim/pack/nvim/start/telescope-fzf-native/; mkdir build; gcc -O3 -Wall -fpic -std=gnu99 -shared src/fzf.c -o build/libfzf.dll"')
+end
+require('telescope').load_extension('fzf')
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })

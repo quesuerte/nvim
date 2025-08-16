@@ -14,3 +14,6 @@
 [submodule "pack/nvim/start/plenary"]
 	path = pack/nvim/start/plenary
 	url = https://github.com/nvim-lua/plenary.nvim.git
+[submodule "pack/nvim/start/telescope-fzf-native"]
+	path = pack/nvim/start/telescope-fzf-native
+	url = https://github.com/nvim-telescope/telescope-fzf-native.nvim
