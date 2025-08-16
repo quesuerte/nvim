@@ -3,7 +3,8 @@
 
 local f=io.open("~/.config/nvim/pack/nvim/start/telescope-fzf-native/build/libfzf.dll","r")
 if f~=nil then io.close() else
-vim.notify("Telescope fzf native .dll not present--building", vim.log.levels.INFO)
+-- replace gcc command below with the following if using cl.exe
+-- cl /O2 /W3 /LD src/fzf.c /Fe:build/libfzf.dll
 os.execute('powershell -Command "cd ~/.config/nvim/pack/nvim/start/telescope-fzf-native/; mkdir build; gcc -O3 -Wall -fpic -std=gnu99 -shared src/fzf.c -o build/libfzf.dll"')
 end
 require('telescope').load_extension('fzf')
