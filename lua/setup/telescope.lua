@@ -1,5 +1,6 @@
 -- git clone https://github.com/nvim-telescope/telescope.nvim.git ./pack/nvim/start/telescope
--- winget install BurntSushi.ripgrep.MSVC
+-- Download latest release and add to path from following repo:
+-- https://github.com/BurntSushi/ripgrep/releases
 
 local f=io.open("~/.config/nvim/pack/nvim/start/telescope-fzf-native/build/libfzf.dll","r")
 if f~=nil then io.close() else
