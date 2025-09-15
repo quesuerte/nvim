@@ -45,10 +45,12 @@ vim.keymap.set("n", "<leader>wh", "<C-w>h")
 
 vim.keymap.set("n", "<leader>bc", "<C-w>c")
 
-vim.opt.shell = "powershell"
-vim.opt.shellcmdflag = "-command"
-vim.opt.shellquote = "\""
-vim.opt.shellxquote = ""
+if package.config:sub(1,1) == "\\" then
+    vim.opt.shell = "powershell"
+    vim.opt.shellcmdflag = "-command"
+    vim.opt.shellquote = "\""
+    vim.opt.shellxquote = ""
+end
 
 -- might have to manually append path
 -- vim.opt.rtp:append("~/.config/nvim")
