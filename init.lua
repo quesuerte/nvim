@@ -52,6 +52,7 @@ if package.config:sub(1,1) == "\\" then
     vim.opt.shellxquote = ""
 end
 
+vim.opt.swapfile = false
 -- might have to manually append path
 -- vim.opt.rtp:append("~/.config/nvim")
 -- vim.opt.rtp:append("~/.config/nvim/pack/*/start/*")
