@@ -1,13 +1,11 @@
 -- nvim-lspconfig setup
 -- Make sure you've run git clone https://github.com/neovim/nvim-lspconfig ./pack/nvim/start/nvim-lspconfig
---  vim.lsp.config['rust-analyzer'] = {
---      cmd = { 'rust-analyzer' },
---      filetypes = { 'rust' },
---      root_markers = { 'Cargo.toml' }
---  }
 
+-- pipx install pyright
 vim.lsp.enable('pyright')
-vim.lsp.enable('rust-analyzer')
+-- rustup component add rust-analyzer
+-- may also need to change version of rust being used--check rustup version and rust-analyzer --version
+vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('yamlls')
 -- npm install -g typescript typescript-language-server
 vim.lsp.enable('ts_ls')
@@ -16,6 +14,10 @@ vim.lsp.enable('jdtls')
 vim.lsp.enable('bashls')
 -- npm install -g sql-language-server
 vim.lsp.enable('sqlls')
+
+vim.lsp.config['rust_analyzer'] = {
+    cmd = { "rustup", "run", "stable", "rust-analyzer" },
+}
 
 vim.diagnostic.config({
     virtual_text = {
