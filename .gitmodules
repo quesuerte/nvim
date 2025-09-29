@@ -17,6 +17,3 @@
 [submodule "pack/nvim/start/telescope-fzf-native"]
 	path = pack/nvim/start/telescope-fzf-native
 	url = https://github.com/nvim-telescope/telescope-fzf-native.nvim
-[submodule "pack/nvim/start/rust.vim"]
-	path = pack/nvim/start/rust.vim
-	url = https://github.com/rust-lang/rust.vim
